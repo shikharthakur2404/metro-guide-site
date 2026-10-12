@@ -16,28 +16,33 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Chennai Metro fare from Chennai Central to Thousand Lights?","acceptedAnswer":{"@type":"Answer","text":"About ₹20 with a token or QR ticket, or ₹16 with a smart card. Fares are distance-based and may change."}},{"@type":"Question","name":"How long does Chennai Central to Thousand Lights take on the metro?","acceptedAnswer":{"@type":"Answer","text":"Roughly 7 minutes over about 3.9 km and 3 stops."}},{"@type":"Question","name":"How many stops from Chennai Central to Thousand Lights?","acceptedAnswer":{"@type":"Answer","text":"3 stops with no interchange."}}]}</script>
 
 <style>
-:root{--bg:#f5f7fa;--surface:#ffffff;--fg:#16202b;--muted:#5d6b78;--line:#e4e8ee;--accent:#0b57d0;--accent2:#6a5cff;--soft:rgba(11,87,208,.06);--shadow:0 1px 2px rgba(16,24,40,.05)}
+:root{--bg:#f5f7fa;--surface:#ffffff;--fg:#16202b;--muted:#5d6b78;--line:#e4e8ee;--accent:#0b57d0;--accent2:#6a5cff;--soft:rgba(11,87,208,.07);--glow:rgba(11,87,208,.22);--glowSoft:rgba(11,87,208,.12);--shadow:0 1px 2px rgba(16,24,40,.05)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif;color:var(--fg);background:var(--bg)}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif;color:var(--fg);background-color:var(--bg);background-image:radial-gradient(720px 340px at 88% -10%,var(--glowSoft),transparent 62%),radial-gradient(640px 320px at -10% -6%,var(--soft),transparent 58%);background-attachment:fixed}
 a{color:var(--accent)}
 a:hover{text-decoration:none}
 :focus-visible{outline:2px solid var(--accent2);outline-offset:2px;border-radius:4px}
-.wrap{max-width:980px;margin:0 auto;padding:0 18px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 20px}
 header.site{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
-.sitebar{max-width:980px;margin:0 auto;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sitebar{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
 .brand{display:inline-flex;align-items:center;gap:9px;color:var(--fg);text-decoration:none;font-weight:800;font-size:1.06rem;letter-spacing:-.01em}
-.brand .logo{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#0b57d0,#6a5cff);color:#fff}
+.brand .logo{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
 nav.top{display:flex;align-items:center;gap:4px}
 nav.top a{display:inline-flex;align-items:center;gap:6px;color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;padding:6px 10px;border-radius:8px}
 nav.top a:hover{color:var(--accent);background:var(--soft)}
 main{min-height:60vh}
 .ic{display:inline-flex;vertical-align:-3px;line-height:0}
 .ic svg{fill:none;height:1em;width:1em;display:block}
-.hero{background:linear-gradient(135deg,#0b57d0 0%,#5b4dc9 60%,#8a4fc0 100%);color:#fff;border-radius:18px;padding:30px 26px;margin:26px 0 22px;box-shadow:0 8px 24px rgba(11,87,208,.22);position:relative;overflow:hidden}
+.hero{background:linear-gradient(135deg,var(--accent) 0%,var(--accent2) 62%,color-mix(in srgb,var(--accent2) 70%,#fff) 100%);color:#fff;border-radius:20px;padding:30px 26px;margin:26px 0 22px;box-shadow:0 10px 26px var(--glow);position:relative;overflow:hidden;display:flex;gap:26px;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .hero::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%)}
+.hero .htext{flex:1 1 330px;position:relative;z-index:1}
 .hero h1{color:#fff;margin:0 0 6px;font-size:clamp(1.6rem,3.5vw,2.2rem);letter-spacing:-.02em;line-height:1.15}
 .hero p{color:#e2e9ff;margin:0;max-width:62ch}
+.hero .hpane{flex:0 1 46%;min-width:280px;position:relative;z-index:1}
+.hero .hpane img{width:100%;border-radius:14px;border:3px solid rgba(255,255,255,.25);box-shadow:0 16px 34px rgba(0,0,0,.28);display:block;aspect-ratio:16/10;object-fit:cover;background:#eef1f5}
+.hero .herocredit{margin:7px 0 0;font-size:.72rem;color:#c9d6ff;text-align:center}
+.hero .herocredit a{color:#e7edff}
 .hero .hic{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:4px 12px;font-size:.82rem;margin-bottom:14px;backdrop-filter:blur(4px)}
 .badges{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
 .badge{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:600;padding:4px 11px;border-radius:999px;background:var(--soft);color:var(--accent);margin-right:0}
@@ -53,8 +58,8 @@ h3{font-size:1rem;margin:1.4em 0 .45em}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:14px 0;box-shadow:var(--shadow)}
 .actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 4px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:11px;text-decoration:none;font-weight:600;font-size:.92rem;border:1px solid transparent;transition:transform .06s ease,box-shadow .15s ease}
-.btn.primary{background:var(--accent);color:#fff;box-shadow:0 3px 10px rgba(11,87,208,.25)}
-.btn.primary:hover{background:#0a4bb5;box-shadow:0 5px 14px rgba(11,87,208,.3)}
+.btn.primary{background:var(--accent);color:#fff;box-shadow:0 3px 10px var(--glow)}
+.btn.primary:hover{filter:brightness(.94);box-shadow:0 5px 14px var(--glow)}
 .btn.ghost{background:var(--surface);color:var(--fg);border-color:var(--line)}
 .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
 .btn:active{transform:translateY(1px)}
@@ -62,17 +67,17 @@ h3{font-size:1rem;margin:1.4em 0 .45em}
 .search input{flex:1;border:0;outline:0;font:inherit;font-size:1rem;background:transparent;color:var(--fg)}
 .chips{display:flex;flex-wrap:wrap;gap:9px;margin:8px 0 2px}
 .chip{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--fg);text-decoration:none;font-size:.88rem;font-weight:500;transition:border-color .15s,box-shadow .15s,transform .06s}
-.chip:hover{border-color:var(--accent);color:var(--accent);box-shadow:0 2px 8px rgba(11,87,208,.14)}
+.chip:hover{border-color:var(--accent);color:var(--accent);box-shadow:0 2px 8px var(--glowSoft)}
 .chip:active{transform:translateY(1px)}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:8px 0}
 .city-card{border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;background:var(--surface);box-shadow:var(--shadow);text-decoration:none;color:var(--fg);display:flex;flex-direction:column;gap:10px;transition:transform .08s ease,box-shadow .2s ease}
-.city-card:hover{border-color:var(--accent);box-shadow:0 8px 20px rgba(11,87,208,.14);transform:translateY(-2px)}
+.city-card:hover{border-color:var(--accent);box-shadow:0 8px 20px var(--glowSoft);transform:translateY(-2px)}
 .city-card h3{margin:0;font-size:1.05rem;display:flex;align-items:center;gap:8px}
 .city-card .meta{font-size:.83rem;color:var(--muted);display:flex;flex-direction:column;gap:3px}
 .city-card .go{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:600;font-size:.88rem;margin-top:auto}
 .cells{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:8px 0}
 .cell{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 15px;box-shadow:var(--shadow)}
-.cell.accent{background:linear-gradient(180deg,#eaf1ff,#f6f9ff);border-color:#cdddf8}
+.cell.accent{background:linear-gradient(180deg,var(--soft),rgba(255,255,255,.6));border-color:var(--glowSoft)}
 .cell .lbl{display:flex;align-items:center;gap:7px;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
 .cell .big{font-size:1.7rem;font-weight:800;letter-spacing:-.02em;color:var(--fg);margin-top:3px}
 .cell.accent .big{color:var(--accent)}
@@ -97,6 +102,19 @@ ol.tl>li.first::before{background:var(--accent);width:8px;height:8px;left:5px;to
 ol.tl>li.last::before{background:var(--accent);width:8px;height:8px;left:5px;top:11px}
 ol.tl>li:not(:last-child)::after{content:"";position:absolute;left:8px;top:20px;bottom:-2px;width:2px;background:var(--line)}
 .note{font-size:.86rem;color:var(--muted)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 318px;gap:26px;align-items:start;margin:2px 0 0}
+.side{position:sticky;top:74px;display:grid;gap:18px}
+.side .panel h3{font-size:.92rem;letter-spacing:.01em}
+.panel.w ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.panel.w li a{display:flex;align-items:center;gap:8px;color:var(--fg);text-decoration:none;font-size:.92rem}
+.panel.w li a:hover{color:var(--accent)}
+.adslot{border:1.6px dashed rgba(91,107,120,.4);border-radius:14px;min-height:250px;display:grid;place-items:center;color:var(--muted);font-size:.74rem;text-transform:uppercase;letter-spacing:.1em;background:repeating-linear-gradient(45deg,#ffffff 0 12px,#f4f6fa 12px 24px)}
+.adslot.small{min-height:120px}
+@media (max-width:960px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;order:2}
+  .adslot{min-height:110px}
+}
 .chip.count{background:var(--soft);border-color:transparent;color:var(--accent);font-weight:700;pointer-events:none}
 footer.foot{background:var(--surface);border-top:1px solid var(--line);margin-top:44px;padding:26px 0 20px;color:var(--muted);font-size:.88rem}
 .foot .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:22px}
@@ -111,13 +129,15 @@ footer.foot{background:var(--surface);border-top:1px solid var(--line);margin-to
   .foot .cols{grid-template-columns:1fr}
 }
 </style>
+<style>:root{--accent:#0b3d91;--accent2:#6a5cff;--soft:rgba(11,61,145,.08);--glow:rgba(11,61,145,.22);--glowSoft:rgba(11,61,145,.12)}</style>
 </head>
 <body>
 <header class="site">
   <div class="sitebar"><a class="brand" href="/metro-guide-site/"><span class="logo"><span class="ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5h8A1.5 1.5 0 0 1 17.5 5v8A1.5 1.5 0 0 1 16 14.5H8A1.5 1.5 0 0 1 6.5 13V5A1.5 1.5 0 0 1 8 3.5Z"/><path d="M4 18h16"/><path d="M12 5.5v5"/><circle cx="8.5" cy="20" r="1.4"/><circle cx="15.5" cy="20" r="1.4"/></svg></span></span><span>Metro Guide</span></a><nav class="top" aria-label="Sections"><a href="/metro-guide-site/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"/></svg></span>Home</a><a href="/metro-guide-site/chennai/">Chennai</a></nav></div>
 </header>
 <main class="wrap">
-
+<div class="layout">
+  <div>
 <nav class="crumb" aria-label="Breadcrumb"><a href="/metro-guide-site/"><span class="ic" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9"/></svg></span> Home</a><span class="sep">›</span><a href="/metro-guide-site/chennai/">Chennai</a><span class="sep">›</span><a href="/metro-guide-site/chennai/stations/">Stations</a><span class="sep">›</span><a href="/metro-guide-site/chennai/chennai-central-to-thousand-lights/">Chennai Central to Thousand Lights</a></nav>
 <h1>Chennai Central to Thousand Lights Metro</h1>
 <p class="lead"><a href="/metro-guide-site/chennai/chennai-central/">Chennai Central</a> <span class="sep">&#8594;</span> <a href="/metro-guide-site/chennai/thousand-lights/">Thousand Lights</a></p>
@@ -140,7 +160,17 @@ footer.foot{background:var(--surface);border-top:1px solid var(--line);margin-to
 <h2><span class="ic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span> Train timings</h2>
 <ul class="ic-list"><li><span class="icol"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span></span><span><strong>Blue Line:</strong> First 05:00, last 23:00, every ~5 min</span></li></ul>
 <div class="actions"><a class="btn ghost" href="/metro-guide-site/chennai/stations/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></span> All Chennai stations</a></div>
-<p class="note">Fares and travel times shown are estimates derived from CMRL&#39;s published distance-based fare slabs and typical line speeds. They may change. Always confirm the current fare on chennaimetrorail.org before travelling.</p>
+<p class="note">Fares and travel times shown are estimates derived from CMRL&#39;s published distance-based fare slabs and typical line speeds. They may change. Always confirm the current fare on chennaimetrorail.org before travelling.</p></div>
+  <aside class="side"><div class="adslot " role="complementary" aria-label="Advertisement">Advertisement</div>
+<div class="panel w"><h3>Jump to</h3><ul>
+      <li><a href="/metro-guide-site/chennai/map/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4 3.5 5.6V19L9 17l6 2 5.5-1.6V4.8L15 6.4 9 4Z"/><path d="M9 4v13M15 6.4V19"/></svg></span> Metro map</a></li>
+      <li><a href="/metro-guide-site/chennai/stations/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg></span> All stations</a></li>
+      <li><a href="/metro-guide-site/chennai/fares/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.4a2.6 2.6 0 0 0 0 5.2V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3.4a2.6 2.6 0 0 0 0-5.2V8Z"/><path d="M14 6v12"/></svg></span> Fare chart</a></li>
+    </ul></div>
+<div class="panel w"><h3>Popular destinations</h3><ul><li><a href="/metro-guide-site/chennai/chennai-central/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Chennai Central</a></li><li><a href="/metro-guide-site/chennai/alandur/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Alandur</a></li><li><a href="/metro-guide-site/chennai/vadapalani/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Vadapalani</a></li><li><a href="/metro-guide-site/chennai/koyambedu/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Koyambedu</a></li><li><a href="/metro-guide-site/chennai/cmbt/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> CMBT</a></li><li><a href="/metro-guide-site/chennai/chennai-airport/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Airport</a></li><li><a href="/metro-guide-site/chennai/egmore/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Egmore</a></li><li><a href="/metro-guide-site/chennai/poonamallee-bypass/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Poonamallee Bypass</a></li><li><a href="/metro-guide-site/chennai/washermanpet/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Washermanpet</a></li><li><a href="/metro-guide-site/chennai/guindy/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> Guindy</a></li><li><a href="/metro-guide-site/chennai/st-thomas-mount/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.4-7-11a7 7 0 0 1 14 0c0 5.6-7 11-7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span> St. Thomas Mount</a></li></ul></div>
+<div class="panel w"><h3>Lines</h3><ul><li><a href="/metro-guide-site/chennai/stations/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5h8A1.5 1.5 0 0 1 17.5 5v8A1.5 1.5 0 0 1 16 14.5H8A1.5 1.5 0 0 1 6.5 13V5A1.5 1.5 0 0 1 8 3.5Z"/><path d="M4 18h16"/><path d="M12 5.5v5"/><circle cx="8.5" cy="20" r="1.4"/><circle cx="15.5" cy="20" r="1.4"/></svg></span> Blue Line</a></li><li><a href="/metro-guide-site/chennai/stations/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5h8A1.5 1.5 0 0 1 17.5 5v8A1.5 1.5 0 0 1 16 14.5H8A1.5 1.5 0 0 1 6.5 13V5A1.5 1.5 0 0 1 8 3.5Z"/><path d="M4 18h16"/><path d="M12 5.5v5"/><circle cx="8.5" cy="20" r="1.4"/><circle cx="15.5" cy="20" r="1.4"/></svg></span> Green Line</a></li><li><a href="/metro-guide-site/chennai/stations/"><span class="ic" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5h8A1.5 1.5 0 0 1 17.5 5v8A1.5 1.5 0 0 1 16 14.5H8A1.5 1.5 0 0 1 6.5 13V5A1.5 1.5 0 0 1 8 3.5Z"/><path d="M4 18h16"/><path d="M12 5.5v5"/><circle cx="8.5" cy="20" r="1.4"/><circle cx="15.5" cy="20" r="1.4"/></svg></span> Yellow Line</a></li></ul></div>
+<div class="adslot small" role="complementary" aria-label="Advertisement">Advertisement</div></aside>
+</div>
 </main>
 <footer class="foot">
   <div class="wrap">
