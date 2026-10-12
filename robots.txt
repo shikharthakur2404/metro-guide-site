@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shikharthakur2404.github.io/metro-guide-site/sitemap.xml
